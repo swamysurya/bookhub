@@ -1,0 +1,135 @@
+.nav-header {
+  background-color: #ffffff;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-header {
+    height: 89px;
+  }
+}
+.nav-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-contents {
+    width: 80%;
+  }
+}
+
+.nav-items-and-button {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-items-and-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.nav-ul-container {
+  display: none;
+}
+.nav-ul-container1 {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-ul-container {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.home-menu-button {
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .home-menu-button {
+    display: none;
+  }
+}
+.home-nav-icon {
+  height: 17px;
+  width: 65px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .home-nav-icon {
+    width: 133px;
+    height: 41px;
+  }
+}
+
+.link-element {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-list-element {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.desktop-logout-button {
+  cursor: pointer;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #0284c7;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .nav-list-element {
+    font-size: 20px;
+  }
+  .desktop-logout-button {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+}
+
+.small-nav-menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+  background-color: #f5f7fa;
+  width: 100%;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .small-nav-menu-items {
+    display: none;
+  }
+}

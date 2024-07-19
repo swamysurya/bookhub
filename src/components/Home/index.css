@@ -1,0 +1,275 @@
+.home-container {
+  background-color: #f5f7fa;
+  height: 100vh;
+  font-family: 'Open Sans';
+}
+.home-section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f7fa;
+}
+
+/* heading element */
+
+.home-page-heading {
+  color: #1e293b;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+}
+
+/* paragraph element */
+
+.home-page-paragraph {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #475569;
+  width: 90%;
+  margin: auto;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.find-books-btn-container {
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .find-books-btn-container {
+    display: none;
+  }
+}
+
+.find-books-btn {
+  background-color: #0284c7;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  width: 104px;
+  height: 34px;
+  font-size: 12px;
+  font-family: 'Open Sans';
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-page-heading {
+    width: 80%;
+    font-size: 40px;
+    line-height: 64px;
+  }
+  .home-page-paragraph {
+    width: 80%;
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .find-books-btn {
+    margin-bottom: 0px;
+  }
+}
+
+.slick-main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 0px 40px;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-main-container {
+    width: 80%;
+  }
+}
+
+.logo-image {
+  width: 126px;
+  height: 137px;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-image {
+    height: 336px;
+    width: 285px;
+  }
+}
+
+/* You can change the CSS color to style the Next and 
+Previous Arrow buttons according to your project */
+
+.slick-prev:before {
+  color: #98989859;
+  font-size: 10px;
+}
+.slick-next:before {
+  color: #989898;
+  font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .slick-prev:before {
+    font-size: 24px;
+  }
+  .slick-next:before {
+    font-size: 24px;
+  }
+}
+.loader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.top-rated-books-heading {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  color: #1e293b;
+}
+
+@media screen and (min-width: 768px) {
+  .top-rated-books-heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-rated-books-heading {
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: 700;
+  }
+}
+
+.top-rated-books-and-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .top-rated-books-and-btn-container {
+    padding: 10px 0px;
+  }
+}
+
+.find-boksbtn2 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .find-boksbtn2 {
+    display: block;
+  }
+}
+
+.slick-author-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.slick-title {
+  font-size: 10px;
+  font-weight: 400;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .slick-author-name {
+    font-size: 24px;
+  }
+  .slick-title {
+    font-size: 16px;
+  }
+}
+.slick-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  gap: 10px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-icons {
+    font-size: 24px;
+  }
+}
+
+.contact-para {
+  text-align: center;
+  color: #3d3c3c;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.loader-container {
+  height: 80vh;
+}
+
+.failure-section {
+  background-color: #ffffff;
+  text-align: center;
+  font-family: open Sans;
+}
+.failure-view-image {
+  width: 243px;
+}
+.failure-message {
+  font-size: 12px;
+  color: #475569;
+}
+.tryagain-btn {
+  background-color: #0284c7;
+  font-size: 12px;
+  outline-color: none;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .failure-view-image {
+    width: 347px;
+  }
+  .failure-message {
+    font-size: 16px;
+  }
+}
