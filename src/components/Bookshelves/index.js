@@ -92,8 +92,8 @@ class Bookshelves extends Component {
   }
 
   loadingView = () => (
-    <div className='bookshelf-loader-container' testid='loader'>
-      <Loader type='TailSpin' color='#0284C7' height={50} width={50} />
+    <div className="bookshelf-loader-container" testid="loader">
+      <Loader type="TailSpin" color="#0284C7" height={50} width={50} />
     </div>
   )
 
@@ -104,25 +104,25 @@ class Bookshelves extends Component {
       <>
         {total !== 0 ? (
           <>
-            <ul className='book-list-container'>
+            <ul className="book-list-container">
               {books.map(eachBook => this.renderBookCard(eachBook))}
             </ul>
-            <div className='footer-icons'>
+            <div className="footer-icons">
               <FaGoogle />
               <FaTwitter />
               <RiInstagramFill />
               <FaYoutube />
             </div>
-            <p className='contact-para'>Contact Us</p>
+            <p className="contact-para">Contact Us</p>
           </>
         ) : (
-          <div className='no-books-view'>
+          <div className="no-books-view">
             <img
-              src='https://res.cloudinary.com/davv8r8v4/image/upload/v1708988217/bookhub%20assets/bookShelf/t0hvfofcs8xhlkv9ouax.png'
-              className='no-books-image'
-              alt='no books'
+              src="https://res.cloudinary.com/davv8r8v4/image/upload/v1708988217/bookhub%20assets/bookShelf/t0hvfofcs8xhlkv9ouax.png"
+              className="no-books-image"
+              alt="no books"
             />
-            <p className='no-books-msg'>
+            <p className="no-books-msg">
               Your search for {noBooksMsgValue} did not find any matches.
             </p>
           </div>
@@ -132,25 +132,25 @@ class Bookshelves extends Component {
   }
 
   renderBookCard = bookDetails => (
-    <li key={bookDetails.id} className='book-list-element'>
-      <Link to={`/books/${bookDetails.id}`} className='book-link-element'>
-        <div className='book-image-container'>
+    <li key={bookDetails.id} className="book-list-element">
+      <Link to={`/books/${bookDetails.id}`} className="book-link-element">
+        <div className="book-image-container">
           <img
             src={bookDetails.coverPic}
-            className='book-image'
+            className="book-image"
             alt={bookDetails.title}
           />
         </div>
         <div>
-          <h1 className='book-title'>{bookDetails.title}</h1>
-          <p className='book-author'>{bookDetails.authorName}</p>
-          <p className='book-rating'>
-            Avg Rating <BsFillStarFill className='star-icon' />{' '}
+          <h1 className="book-title">{bookDetails.title}</h1>
+          <p className="book-author">{bookDetails.authorName}</p>
+          <p className="book-rating">
+            Avg Rating <BsFillStarFill className="star-icon" />{' '}
             {bookDetails.rating}
           </p>
-          <p className='book-reading-status'>
+          <p className="book-reading-status">
             Status:{' '}
-            <span className='book-reading-status-info'>
+            <span className="book-reading-status-info">
               {bookDetails.readStatus}
             </span>
           </p>
@@ -160,14 +160,14 @@ class Bookshelves extends Component {
   )
 
   failureView = () => (
-    <div className='bookshelf-failure-section'>
+    <div className="bookshelf-failure-section">
       <img
-        src='https://res.cloudinary.com/davv8r8v4/image/upload/v1708885227/bookhub%20assets/home/vzcccjrrhwmzoe7yanpg.png'
-        alt='failure view'
-        className='failure-view-image'
+        src="https://res.cloudinary.com/davv8r8v4/image/upload/v1708885227/bookhub%20assets/home/vzcccjrrhwmzoe7yanpg.png"
+        alt="failure view"
+        className="failure-view-image"
       />
-      <p className='failure-message'>Something went wrong. Please try again</p>
-      <button type='button' className='tryagain-btn' onClick={this.getGetBooks}>
+      <p className="failure-message">Something went wrong. Please try again</p>
+      <button type="button" className="tryagain-btn" onClick={this.getGetBooks}>
         Try Again
       </button>
     </div>
@@ -215,35 +215,35 @@ class Bookshelves extends Component {
     const {bookSearchInputValue, activeShelfId, activeHeading} = this.state
     console.log(bookSearchInputValue)
     return (
-      <div className='bookshelves-container'>
+      <div className="bookshelves-container">
         <Header />
-        <div className='search-shelf-and-bookslist-container'>
-          <div className='search-and-shelf-container'>
-            <div className='search-input-container'>
+        <div className="search-shelf-and-bookslist-container">
+          <div className="search-and-shelf-container">
+            <div className="search-input-container">
               <input
-                type='search'
+                type="search"
                 value={bookSearchInputValue}
-                className='search-input-element'
-                placeholder='search'
+                className="search-input-element"
+                placeholder="search"
                 onChange={this.handleOnChangeSearchInput}
                 onKeyDown={this.handleKeyDown}
               />
               <button
-                className='seach-btn-element'
-                type='button'
+                className="seach-btn-element"
+                type="button"
                 onClick={this.onHandleSearch}
-                testid='searchButton'
+                testid="searchButton"
               >
-                <BsSearch className='search-icon' />
+                <BsSearch className="search-icon" />
               </button>
             </div>
-            <div className='shelf-container'>
-              <h1 className='bookshelves-heading'>Bookshelves</h1>
-              <ul className='bookshelf-list-container'>
+            <div className="shelf-container">
+              <h1 className="bookshelves-heading">Bookshelves</h1>
+              <ul className="bookshelf-list-container">
                 {bookshelvesList.map(eachShelfName => (
                   <li key={eachShelfName.id}>
                     <button
-                      type='button'
+                      type="button"
                       className={`shelf-name ${
                         eachShelfName.value === activeShelfId ? 'highlight' : ''
                       }`}
@@ -261,25 +261,25 @@ class Bookshelves extends Component {
               </ul>
             </div>
           </div>
-          <div className='search-and-lsit-footer-container'>
-            <div className='shelf-name-and-search-container'>
-              <h1 className='shelf-name'>{activeHeading} Books</h1>
-              <div className='search-input-container1'>
+          <div className="search-and-lsit-footer-container">
+            <div className="shelf-name-and-search-container">
+              <h1 className="shelf-name">{activeHeading} Books</h1>
+              <div className="search-input-container1">
                 <input
                   value={bookSearchInputValue}
-                  type='search'
-                  className='search-input-element'
-                  placeholder='search'
+                  type="search"
+                  className="search-input-element"
+                  placeholder="search"
                   onKeyDown={this.handleKeyDown}
                   onChange={this.handleOnChangeSearchInput}
                 />
                 <button
-                  className='seach-btn-element'
-                  type='button'
+                  className="seach-btn-element"
+                  type="button"
                   onClick={this.onHandleSearch}
-                  testid='searchButton'
+                  testid="searchButton"
                 >
-                  <BsSearch className='search-icon' />
+                  <BsSearch className="search-icon" />
                 </button>
               </div>
             </div>

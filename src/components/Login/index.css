@@ -110,3 +110,13 @@
   text-align: left;
   color: #ef4444;
 }
+
+.demo-cred-container {
+  text-align: left;
+}
+.demo-cred-container > p {
+  margin: 0px;
+}
+.demo-cred-container > h4 {
+  margin: 0px;
+}

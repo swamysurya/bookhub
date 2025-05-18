@@ -60,8 +60,12 @@ class Login extends Component {
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
-    const {userNameInput, userPasswordInput, showErrorMsg, errorMsg} =
-      this.state
+    const {
+      userNameInput,
+      userPasswordInput,
+      showErrorMsg,
+      errorMsg,
+    } = this.state
     return (
       <div className="login-page-container">
         <img
@@ -110,6 +114,11 @@ class Login extends Component {
               Login
             </button>
           </form>
+          <div className="demo-cred-container">
+            <h4>demo creds</h4>
+            <p>username: rahul</p>
+            <p>password: rahul@2021</p>
+          </div>
         </div>
       </div>
     )
